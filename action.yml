@@ -10,7 +10,7 @@ inputs:
     default: 'all'
 runs:
   using: 'docker'
-  image: 'ghcr.io/hsgamer/mcreleaser:master'
+  image: 'docker://ghcr.io/hsgamer/mcreleaser:master'
   env:
     DOCKER_FILES: ${{ inputs.files }}
     DOCKER_PLATFORMS: ${{ inputs.platforms }}
