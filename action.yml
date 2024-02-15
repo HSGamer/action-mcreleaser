@@ -8,13 +8,9 @@ inputs:
     description: 'The platforms to upload to'
     required: false
     default: 'all'
-  mcreleaser:
-    description: 'The tag of MCReleaser to be used'
-    required: false
-    default: master
 runs:
   using: 'docker'
-  image: 'ghcr.io/hsgamer/mcreleaser:${{ inputs.mcreleaser }}'
+  image: 'ghcr.io/hsgamer/mcreleaser:master'
   env:
     DOCKER_FILES: ${{ inputs.files }}
     DOCKER_PLATFORMS: ${{ inputs.platforms }}
