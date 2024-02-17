@@ -12,5 +12,5 @@ runs:
   using: 'docker'
   image: 'docker://ghcr.io/hsgamer/mcreleaser:master'
   env:
-    DOCKER_FILES: ${{ inputs.files }}
-    DOCKER_PLATFORMS: ${{ inputs.platforms }}
+    FILES: ${{ inputs.files }}
+    PLATFORMS: ${{ inputs.platforms }}
